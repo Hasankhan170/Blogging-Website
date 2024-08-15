@@ -11,14 +11,23 @@
   
 
 
-    <header class="main-header">
-        <div class="header-heading">
-            <h2>Blogging Website</h2>
-        </div>
-        <div class="header-text">
-            <a href="./login.html">Login</a>
-        </div>
-    </header>
+ <!-- header section  -->
+ <header class="header-main">
+    <div class="blog-heading">
+        <h4>Blogging App</h4>
+    </div>
+    <div class="option-blog">
+        <a href="./login.html" class="login-blog">Login</a>
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            <div class="dropdown-content">
+              <a href="#">All Blogs</a>
+              <a href="#">Dashbord</a>
+              <a href="#">Profile</a>
+            </div>
+          </div>
+    </div>
+</header>
 
 
 
@@ -28,8 +37,8 @@
             <input type="text" required  class="first-name" placeholder="First Name"><br><br>
             <input type="text" required  class="last-name" placeholder="Last Name"><br><br>
             <input type="email" required  class="email-signup" placeholder="Email"><br><br>
-            <input type="password" required  class="password-signup" placeholder="Password"><br><br>
-            <input type="password" required  class="confirm-password" placeholder="Confirm Password"><br><br>
+            <input type="password" minlength="6" required  class="password-signup" placeholder="Password"><br><br>
+            <input type="password" required minlength="6"  class="confirm-password" placeholder="Confirm Password"><br><br>
             <button class="signup-btn">Sign Up</button>
         </form>
     </div>

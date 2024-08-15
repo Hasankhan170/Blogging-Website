@@ -5,19 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogging Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="header-heading">
-            <h2>Blogging Website</h2>
+    <header class="header-main">
+        <div class="blog-heading">
+            <h4>Blogging App</h4>
         </div>
-        <div class="header-text">
-            <a href="./login.html">Login</a>
+        <div class="option-blog">
+            <a href="./login.html" class="login-blog">Login</a>
+            <div class="dropdown">
+                <button  class="dropbtn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                <div class="dropdown-content">
+                  <a href="#">All Blogs</a>
+                  <a href="#">Dashbord</a>
+                  <a href="#">Profile</a>
+                </div>
+              </div>
         </div>
     </header>
 
-    <h1>DashBoard</h1>
+    <h1>All Blogs</h1>
 
 
     <script type="module" src="app.js"></script>
