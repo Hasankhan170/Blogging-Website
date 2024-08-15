@@ -8,17 +8,33 @@
 </head>
 <body>
 
+  
+
+
+    <header class="main-header">
+        <div class="header-heading">
+            <h2>Blogging Website</h2>
+        </div>
+        <div class="header-text">
+            <a href="./login.html">Login</a>
+        </div>
+    </header>
+
+
     <h1>Register</h1>
 
 
-    <header>
-        <div class="heading">
-            <h1>Blogging Website</h1>
-        </div>
-        <div class="text">
-            <h6><a href="./login.html">Login</a></h6>
-        </div>
-    </header>
+    <div class="sign-heading">
+        <h1 class="sign-head">sign up</h1>
+        <form id="signup-form">
+            <input type="text" required  class="first-name" placeholder="First Name"><br><br>
+            <input type="text" required  class="last-name" placeholder="Last Name"><br><br>
+            <input type="email" required  class="email-signup" placeholder="Email"><br><br>
+            <input type="password" required  class="password-signup" placeholder="Password"><br><br>
+            <input type="password" required  class="confirm-password" placeholder="Confirm Password"><br><br>
+            <button class="signup-btn">Sign Up</button>
+        </form>
+    </div>
 
 
     <script type="module" src="register.js"></script>
