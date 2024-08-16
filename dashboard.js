@@ -10,6 +10,27 @@ const renderBlogs = document.querySelector('.renderBlogs')
 
 let arr = []
 
+ async function getdata(){
+    const querySnapshot = await getDocs(collection(db, "blogs"));
+    querySnapshot.forEach((doc) => {
+    console.log(doc.data());
+});
+
+
+}
+
+
+function renderData(){
+    renderBlogs.innerHTML = ''
+    arr.forEach((item)=>{
+        renderBlogs.innerHTML += `
+        <h2 style ="color:black">${item.title}</h2>
+        <p style ="color:black">${item.content}</p>`
+    })
+}
+
+renderData()
+
 dashboardForm.addEventListener('submit', async (e)=>{
     e.preventDefault()
 
@@ -21,6 +42,7 @@ dashboardForm.addEventListener('submit', async (e)=>{
     try {
         const docRef = await addDoc(collection(db, "blogs"), userValues);
         arr.push(userValues)
+        renderData()
         console.log("Document written with ID: ", docRef.id);
       } catch (e) {
         console.error("Error adding document: ", e);
@@ -30,6 +52,7 @@ dashboardForm.addEventListener('submit', async (e)=>{
        dashboardTextArea.value = ''
     
 })
+
 
 
 
