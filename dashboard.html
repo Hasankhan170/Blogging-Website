@@ -18,18 +18,36 @@
             <div class="dropdown">
                 <button  class="dropbtn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
                 <div class="dropdown-content">
-                  <a href="#">All Blogs</a>
-                  <a href="./dashboard.html">Dashbord</a>
+                  <a href="./index.html">All Blogs</a>
+                  <a href="#">Dashbord</a>
                   <a href="#">Profile</a>
                 </div>
               </div>
         </div>
     </header>
 
-    <h1>All Blogs</h1>
+    <!-- dashboard section  -->
+<h1 class="dashboard-head">Dashboard</h1>
+
+<!-- dashboard form  -->
+
+<div class="dashboard-main">
+  <form  class="dashboard-form">
+    <input required class="dashboard-input" type="text" placeholder="Enter Title..">
+    <br>
+    <textarea required class="dashboard-textarea" placeholder="Text.." rows="" cols="180" ></textarea>
+    <button class="publish-blog">Publish Blog</button>
+  </form>
+</div>
+
+<!-- my blogs section  -->
+<h2 class="dashboard-head">My Blogs</h2>
 
 
-    <script type="module" src="app.js"></script>
+<div class="renderBlogs"></div>
+
+
+    <script type="module" src="dashboard.js"></script>
     
 </body>
 </html>
