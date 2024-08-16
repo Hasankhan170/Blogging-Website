@@ -17,6 +17,9 @@ signupForm.addEventListener('submit' , (e)=>{
     const user = userCredential.user;
     console.log(user);
 
+  
+
+
     setTimeout(() => {
         alert('Registered successfully!');
         window.location = "./login.html";
